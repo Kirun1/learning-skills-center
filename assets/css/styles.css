@@ -1,0 +1,51 @@
+.custom-list {
+    list-style-type: none;
+    counter-reset: list-counter;
+    padding-left: 0;
+    font-weight: 500;
+}
+
+.custom-list li {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1023px) {    
+    .custom-list li {
+        margin-bottom: 10px;
+    }
+}
+
+.custom-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+.custom-list li::before {
+    content: counter(list-counter) ") ";
+    counter-increment: list-counter;
+}
+
+/* Owl carousel  */
+.owl-carousel {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.testimononial-profile-img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.testimonials-section .owl-carousel .owl-stage-outer {
+    overflow: visible !important;
+}
+
+.testimonials-section .owl-carousel .owl-item {
+    padding: 10px;
+}
+
+.second-tr th {
+    border-left: 0;
+    border-right: 0;
+}
