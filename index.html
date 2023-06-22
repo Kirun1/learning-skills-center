@@ -15,30 +15,32 @@
 </head>
 
 <body class="">
-    <header class="w-full flex gap-4 max-w-7xl mx-auto h-20 items-center justify-between lg:justify-normal px-4">
-        <!-- Header content (e.g., logo, navigation) --> 
-        <a href="index.html" class="logo-link rounded-lg flex-shrink-0"> <img src="assets/images/logo.png" class="w-[200px] sm:w-[300px]" alt="Logo"> </a>
-        <ul class="navigation-menu hidden lg:flex flex-1 gap-4 justify-end">
-            <!-- Navigation menu items -->
-            <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="about.html">About</a></li>
-            <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="mission.html">Mission</a></li>
-            <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="faq.html">FAQ</a></li>
-            <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="reviews.html">User Reviews</a></li>
-            <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="feedback.html">Contact/Feedback</a></li>
-        </ul>
-        <div class="header-aside hidden lg:flex justify-between items-center gap-4">
-            <!-- Header aside content --> 
-            <a href="#" class="text-white hover:text-white bg-[#E69138] px-4 py-2 rounded-lg truncate">Login</a> 
-            <a href="#" class="text-black hover:text-black bg-[#eeeeee] px-4 py-2 rounded-lg truncate">Get Started</a>
-        </div> 
-        <!-- Mobile Navigation Toggle --> 
-        <button id="mobile-nav-open" class="mobile-nav-toggle lg:hidden"> 
-            <svg class="h-6 w-6" fill="#000000" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg> 
-        </button> 
+    <header class="w-full fixed bg-white">
+        <div class="flex gap-4 max-w-7xl mx-auto h-20 items-center justify-between lg:justify-normal px-4">
+            <!-- Header content (e.g., logo, navigation) --> 
+            <a href="index.html" class="logo-link rounded-lg flex-shrink-0"> <img src="assets/images/logo.png" class="w-[200px] sm:w-[300px]" alt="Logo"> </a>
+            <ul class="navigation-menu hidden lg:flex flex-1 gap-4 justify-end">
+                <!-- Navigation menu items -->
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="about.html">About</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="mission.html">Mission</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="faq.html">FAQ</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="reviews.html">User Reviews</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="feedback.html">Contact/Feedback</a></li>
+            </ul>
+            <div class="header-aside hidden lg:flex justify-between items-center gap-4">
+                <!-- Header aside content --> 
+                <a href="#" class="text-white hover:text-white bg-[#E69138] px-4 py-2 rounded-lg truncate">Login</a> 
+                <a href="#" class="text-black hover:text-black bg-[#eeeeee] px-4 py-2 rounded-lg truncate">Get Started</a>
+            </div> 
+            <!-- Mobile Navigation Toggle --> 
+            <button id="mobile-nav-open" class="mobile-nav-toggle lg:hidden"> 
+                <svg class="h-6 w-6" fill="#000000" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg> 
+            </button> 
+        </div>
         <!-- Mobile Navigation -->
-        <div class="mobile-navigation-menu absolute hidden lg:hidden bg-white px-4 py-12 top-0 right-0 h-full w-full w-3/4 sm:w-[300px]">
+        <div class="mobile-navigation-menu absolute hidden lg:hidden bg-white px-4 py-12 top-0 right-0 h-screen w-full w-3/4 sm:w-[300px] bg-white">
             <!-- Navigation cancel button --> 
             <button id="mobile-nav-close" class="mobile-nav-close absolute top-4 right-4"> <img src="assets/images/close.svg" alt="Close" /> </button> <!-- Navigation menu items -->
             <ul class="navigation-menu absolute flex flex-col gap-4 divide-y justify-center h-full w-full">
@@ -52,7 +54,7 @@
             </ul>
         </div>
     </header>
-    <main class="divide-y">
+    <main class="divide-y pt-20">
         <!-- Hero section -->
         <div class="flex flex-col md:flex-row px-4 max-w-7xl mx-auto items-center py-10">
             <div class="w-full p-8 order-2 md:order-1">
@@ -543,7 +545,7 @@
             </div>
         </div> 
         <!-- section 9: Pricing table --> 
-        <div class="px-4 max-w-7xl mx-auto py-10 flex flex-col md:flex-row items-center justify-center">
+        <div class="px-4 max-w-7xl mx-auto py-10 flex flex-col md:flex-row items-center justify-center md:h-[600px]">
             <div class="w-full flex flex-col items-center justify-center">
                 <div class="w-full">
                     <img src="assets/images/1687391426105.png" alt="" class="w-32 mx-auto">
@@ -557,6 +559,28 @@
             </div>
             <div class="w-full text-center mt-4">
                 <p class="text-xl text-[#6F96DE]">Our cognitive learning skills assessments program has now been taken by over 20,000 students</p>
+            </div>
+        </div> 
+        <!-- section 9: Pricing table --> 
+        <div class="px-4 max-w-7xl mx-auto py-10 md:h-[600px]">
+            <div class="w-full flex flex-col md:flex-row items-center justify-center">
+                <div class="w-full text-center">
+                    <p class="text-xl text-center text-[#6D8DC4]">The assessments are age-normed from ages 7 to adult and increase in complexity</p>
+                    <p class="text-xl text-center text-[#9D71D1]">The results of the assessment are compared to the results of thousands of other students wh are exactly the same age</p>
+                </div>
+                <div class="w-full text-center mt-4">
+                    <img src="assets/images/1687430353765.png" alt="" class="md:w-96 mx-auto">
+                </div>
+            </div>
+            <div class="w-full text-center mt-4">
+                <p class="text-xl text-[#9D71D1]">Every Cognitive learning is only 2 to 5 minutes</p>
+            </div>
+        </div> 
+        <!-- section 9: Pricing table --> 
+        <div class="px-4 max-w-7xl flex md:items-center md:justify-center mx-auto py-10 md:h-[600px]">
+            <div class="w-full text-center mt-4">
+                <p class="text-xl text-[#8648CE] md:mb-8">Our free & comprehensive reportis designed to be shared with student, parents, and school so there is a clear, objective, and cohesive roadmap for the students academic progress</p>
+                <img src="assets/images/1687430789718.png" alt="" class="md:w-96 mx-auto">
             </div>
         </div> 
     </main>
