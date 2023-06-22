@@ -15,26 +15,26 @@
 </head>
 
 <body class="">
-    <header class="w-full fixed bg-white">
+    <header class="w-full fixed bg-[#999999] z-50">
         <div class="flex gap-4 max-w-7xl mx-auto h-20 items-center justify-between lg:justify-normal px-4">
             <!-- Header content (e.g., logo, navigation) --> 
             <a href="index.html" class="logo-link rounded-lg flex-shrink-0"> <img src="assets/images/logo.png" class="w-[200px] sm:w-[300px]" alt="Logo"> </a>
-            <ul class="navigation-menu hidden lg:flex flex-1 gap-4 justify-end">
+            <ul class="navigation-menu hidden lg:flex flex-1 gap-4 justify-end text-white">
                 <!-- Navigation menu items -->
-                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="about.html">About</a></li>
-                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="mission.html">Mission</a></li>
-                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="faq.html">FAQ</a></li>
-                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="reviews.html">User Reviews</a></li>
-                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="feedback.html">Contact/Feedback</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-white"><a href="about.html">About</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-white"><a href="mission.html">Mission</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-white"><a href="faq.html">FAQ</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-white"><a href="reviews.html">User Reviews</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-white"><a href="feedback.html">Contact/Feedback</a></li>
             </ul>
             <div class="header-aside hidden lg:flex justify-between items-center gap-4">
                 <!-- Header aside content --> 
-                <a href="#" class="text-white hover:text-white bg-[#E69138] px-4 py-2 rounded-lg truncate">Login</a> 
-                <a href="#" class="text-black hover:text-black bg-[#eeeeee] px-4 py-2 rounded-lg truncate">Get Started</a>
+                <a href="#" class="text-white bg-[#E69138] px-4 py-2 rounded-lg truncate">Get Started</a>
+                <a href="#" class="text-black hover:text-white  bg-[#eeeeee] px-4 py-2 rounded-lg truncate">Login</a> 
             </div> 
             <!-- Mobile Navigation Toggle --> 
             <button id="mobile-nav-open" class="mobile-nav-toggle lg:hidden"> 
-                <svg class="h-6 w-6" fill="#000000" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="h-6 w-6 text-white" fill="#000000" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg> 
             </button> 
@@ -44,13 +44,13 @@
             <!-- Navigation cancel button --> 
             <button id="mobile-nav-close" class="mobile-nav-close absolute top-4 right-4"> <img src="assets/images/close.svg" alt="Close" /> </button> <!-- Navigation menu items -->
             <ul class="navigation-menu absolute flex flex-col gap-4 divide-y justify-center h-full w-full">
-                <li class="p-4"><a href="about.html">About</a></li>
-                <li class="p-4"><a href="mission.html">Mission</a></li>
-                <li class="p-4"><a href="faq.html">FAQ</a></li>
-                <li class="p-4"><a href="reviews.html">User Reviews</a></li>
-                <li class="p-4"><a href="feedback.html">Contact/Feedback</a></li>
-                <li class="p-4"><a href="login.html">Login</a></li>
-                <li class="p-4"><a href="get-started.html">Get Started</a></li>
+                <li class="p-4"><a href="#">About</a></li>
+                <li class="p-4"><a href="#">Mission</a></li>
+                <li class="p-4"><a href="#">FAQ</a></li>
+                <li class="p-4"><a href="#">User Reviews</a></li>
+                <li class="p-4"><a href="#">Contact/Feedback</a></li>
+                <li class="p-4"><a href="#">Get Started</a></li>
+                <li class="p-4"><a href="#">Login</a></li>
             </ul>
         </div>
     </header>
@@ -58,8 +58,10 @@
         <!-- Hero section -->
         <div class="flex flex-col md:flex-row px-4 max-w-7xl mx-auto items-center py-10">
             <div class="w-full p-8 order-2 md:order-1">
-                <h1 class="text-2xl lg:text-4xl font-bold mb-4 text-center">Learning Skills Center</h1>
-                <p class="text-lg text-center mb-4">What is your intelligence type?</p>
+                <div class="flex items-end gap-4 flex-wrap">
+                    <h1 class="text-2xl lg:text-4xl font-bold mb-4 md:mb-0 text-center">Learning Skills Center</h1>
+                    <p class="text-lg text-center mb-4 md:mb-0">What is your intelligence type?</p>
+                </div>
                 <div class="w-full flex flex-col md:flex-row items-center">
                     <div class="w-full md:w-3/4">
                         <h3 class="text-2xl font-bold">Take our 12 FREE game based intelligence assessments</h3>
@@ -326,31 +328,6 @@
             <p class="mb-4 px-8">The quick results and report show different results and are different colors which makes it very confusing.  The Quick results should have the same scale 1,2,3,4,5, as the report.</p>
             <p class="mb-4 px-8">For example Writing memory on the quick report shows in 8 and on downloaded report its 8.5</p>
         </div> 
-        <!-- section 4: Optional Features - Customized newsfeed -->
-        <div class="px-4 max-w-7xl mx-auto py-10">
-            <h3 class="text-2xl lg:text-4xl text-center font-bold mb-4">The Learning Skills Center</h3>
-            <p class="text-center">What is your intelligence type?</p>
-            <div class="flex flex-col md:flex-row w-full items-center">
-                <div class="w-full p-8 order-2 md:order-1">
-                    <p class="text-left">An analysis of the 12 most important abilities needed for learning </p>
-                    <p class="text-left">Strengths weaknesses potentials limitations ability level</p>
-                    <p class="text-left">Gives test corrects the test, gives results, interpret results, outlines & defines s & w writes remediation plan ( if needed)</p>
-                    <p class="text-left">An easy to read graphic, visual guide to individual S & W </p>
-                    <p class="text-left">Showing at a glance ho each individual learns </p>
-                    <p class="text-left">A relative value for each ability is presented and compared to all others. A clear, concise, visual illustration of unique learning style. </p>
-                    <p class="text-left">What to expect, what to praise, what to reward, what to continue, what to drop</p>
-                    <p class="text-left">Gives immediate results, interprets results, outline defines strengths and weaknesses. </p>
-                    <p class="text-left">Each “game” measures a specific ability.   Only 2 tests are timed  </p>
-                    <h4 class="font-bold py-4">Marketing</h4>
-                    <p class="text-left">Assists in gaining valuable insights into the unique learning process skills of individuals. </p>
-                    <p class="text-left">The profile assists students in capitalizing on their strengths and how to manage any weaker areas. </p>
-                    <p class="text-left">Profile your relative strengths when compared to students your same age</p>
-                    <p class="text-left">Position students to ______ their overall achievement potentials an limitiations</p>
-                    <p class="text-left">Achieve proficiency in all basic learning process skills, the basic tasks of communication; speaking, reading, writing and quantitative processing can be expected to be mastered. Deficiency in any one process can seriously impair the learning process. </p>
-                    <p class="text-left">If weak learning process skills are identified early enough they can be remediated. Left untreated, they can become fixed and always inhibit the learning process. </p>
-                </div>
-            </div>
-        </div> 
         <!-- section 6: Optional Features -->
         <div class="testimonials-section px-4 max-w-7xl mx-auto py-10">
             <div class="flex flex-col md:flex-row items-center gap-4 pt-10">
@@ -438,151 +415,7 @@
             <h3 class="text-xl text-center mb-4 text-[#9549EA] flex-1">Why you can ace certain classes without studying?</h3>
             <h3 class="text-xl text-center mb-4 text-[#74A0DA] flex-1">Why do you put in twice the effort for the same grade as others?</h3>
             <p>Millions of students have asked themselves these simple questions but have not had a way to answer it until now.</p>
-        </div> 
-        <!-- section 9: Pricing table --> 
-        <div class="px-4 max-w-7xl mx-auto py-10 flex flex-col items-center justify-center">
-            <h3 class="text-2xl lg:text-4xl text-center font-bold mb-4 text-[#8C44DB]">Take our 12 FREE assessments and get a FREE 8 page report</h3>
-            <div class="w-full grid grid-cols-12 items-start mb-4 gap-2 bg-[#5893DE] border p-2 text-white break-words pt-4 rounded-lg">
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Focus</h4>
-                    <div class="w-full">
-                        <img src="assets/images/10.png" alt="Focus" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Concentration</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Reading</h4>
-                    <div class="w-full">
-                        <img src="assets/images/3.png" alt="Reading" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Visual Memory</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Writing</h4>
-                    <div class="w-full">
-                        <img src="assets/images/4.png" alt="writing" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Visual Motor Learning</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Listening</h4>
-                    <div class="w-full">
-                        <img src="assets/images/2.png" alt="Listening" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Auditory Visual Memory</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Speaking</h4>
-                    <div class="w-full">
-                        <img src="assets/images/1i.png" alt="Speaking" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Verbal Production</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Logic</h4>
-                    <div class="w-full">
-                        <img src="assets/images/11.png" alt="Logic" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Concentration</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Spatial Reasoning</h4>
-                    <div class="w-full">
-                        <img src="assets/images/5.png" alt="Spatial Reasoning" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Non Verbal Concepts</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">What is heard in order</h4>
-                    <div class="w-full">
-                        <img src="assets/images/8.png" alt="What is heard in order" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Auditory Sequencing</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">What is seen in order</h4>
-                    <div class="w-full">
-                        <img src="assets/images/7.png" alt="What is seen in order" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Visual Sequencing</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Understanding What is seen</h4>
-                    <div class="w-full">
-                        <img src="assets/images/13.png" alt="Understanding What is seen" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Visual Abstraction</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Understanding what is heard</h4>
-                    <div class="w-full">
-                        <img src="assets/images/10.png" alt="Understanding what is heard" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Auditory Abstraction</p>
-                </div>
-                <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 mb-4">
-                    <h4 class="font-bold uppercase text-center text-sm">Writing Memory</h4>
-                    <div class="w-full">
-                        <img src="assets/images/10.png" alt="Writing Memory" class="w-28 my-2 mx-auto">
-                    </div>
-                    <p class="text-center text-sm">Visual Motor Memory</p>
-                </div>
-            </div>
-            <p class="text-xl text-[#AF5663]">Our free automated report identifies our learning strengths & any challenges to achieve better academic success</p>
-        </div> 
-        <!-- section 9: Pricing table --> 
-        <div class="px-4 max-w-7xl mx-auto py-10 flex flex-col items-center justify-center">
-            <div class="w-full flex flex-col md:flex-row items-center justify-center">
-                <div class="w-full md:w-1/2 text-center">
-                    <p class="text-xl text-[#3F9072]">The comprehensive report clearly highlights what the students best learning strengths are and outlines academic subjects that align best with their strengths.</p>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <img src="assets/images/1687389326277.png" alt="" class="w-96 mx-auto">
-                </div>
-            </div>
-            <div class="w-full text-center mt-4">
-                <p class="text-xl text-[#B82C40]">The report also identifies any learning areas that may need improvement and how they can be minimized through specific classroom accomodations and improved with simple excercise recommendations</p>
-            </div>
-        </div> 
-        <!-- section 9: Pricing table --> 
-        <div class="px-4 max-w-7xl mx-auto py-10 flex flex-col md:flex-row items-center justify-center md:h-[600px]">
-            <div class="w-full flex flex-col items-center justify-center">
-                <div class="w-full">
-                    <img src="assets/images/1687391426105.png" alt="" class="w-32 mx-auto">
-                </div>
-                <div class="w-full text-center">
-                    <p class="text-xl text-center text-[#6D8DC4]">30 year career school district psychologist</p>
-                </div>
-            </div>
-            <div class="w-full text-center mt-4">
-                <p class="text-xl text-[#8648CE]">Developed by Dr. Stanley Riley a 30 year School District psychologist. His mission was to give every student a clear objective and free way to zero in on on their learning profile strengths and challenges to achieve.</p>
-            </div>
-            <div class="w-full text-center mt-4">
-                <p class="text-xl text-[#6F96DE]">Our cognitive learning skills assessments program has now been taken by over 20,000 students</p>
-            </div>
-        </div> 
-        <!-- section 9: Pricing table --> 
-        <div class="px-4 max-w-7xl mx-auto py-10 md:h-[600px]">
-            <div class="w-full flex flex-col md:flex-row items-center justify-center">
-                <div class="w-full text-center">
-                    <p class="text-xl text-center text-[#6D8DC4]">The assessments are age-normed from ages 7 to adult and increase in complexity</p>
-                    <p class="text-xl text-center text-[#9D71D1]">The results of the assessment are compared to the results of thousands of other students wh are exactly the same age</p>
-                </div>
-                <div class="w-full text-center mt-4">
-                    <img src="assets/images/1687430353765.png" alt="" class="md:w-96 mx-auto">
-                </div>
-            </div>
-            <div class="w-full text-center mt-4">
-                <p class="text-xl text-[#9D71D1]">Every Cognitive learning is only 2 to 5 minutes</p>
-            </div>
-        </div> 
-        <!-- section 9: Pricing table --> 
-        <div class="px-4 max-w-7xl flex md:items-center md:justify-center mx-auto py-10 md:h-[600px]">
-            <div class="w-full text-center mt-4">
-                <p class="text-xl text-[#8648CE] md:mb-8">Our free & comprehensive reportis designed to be shared with student, parents, and school so there is a clear, objective, and cohesive roadmap for the students academic progress</p>
-                <img src="assets/images/1687430789718.png" alt="" class="md:w-96 mx-auto">
-            </div>
-        </div> 
+        </div>
     </main>
     <footer>
         <!-- Footer content (e.g., copyright, links) -->
