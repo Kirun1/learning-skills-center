@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="bg-[#32A448]">
+    <header class="w-full bg-white shadow-lg fixed">
+        <div class="w-full flex gap-4 max-w-7xl mx-auto h-20 items-center justify-between lg:justify-normal px-4 ">
+            <!-- Header content (e.g., logo, navigation) --> 
+            <a href="index.html" class="logo-link rounded-lg flex-shrink-0"> <img src="assets/images/logo.png" class="w-[200px] sm:w-[300px]" alt="Logo"> </a>
+            <ul class="navigation-menu hidden lg:flex flex-1 gap-4 justify-end">
+                <!-- Navigation menu items -->
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="about.html">About</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="mission.html">Mission</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="faq.html">FAQ</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="reviews.html">User Reviews</a></li>
+                <li class="p-4 hover:border-b-2 border-transparent hover:border-black"><a href="feedback.html">Contact/Feedback</a></li>
+            </ul>
+            <div class="header-aside hidden lg:flex justify-between items-center gap-4">
+                <!-- Header aside content --> 
+                <a href="#" class="text-white hover:text-white bg-[#E69138] px-4 py-2 rounded-lg truncate">Login</a> 
+                <a href="#" class="text-black hover:text-black bg-[#eeeeee] px-4 py-2 rounded-lg truncate">Get Started</a>
+            </div> 
+            <!-- Mobile Navigation Toggle --> 
+            <button id="mobile-nav-open" class="mobile-nav-toggle lg:hidden"> 
+                <svg class="h-6 w-6" fill="#000000" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg> 
+            </button> 
+            <!-- Mobile Navigation -->
+            <div class="mobile-navigation-menu absolute hidden lg:hidden bg-white px-4 py-12 top-0 right-0 h-full w-full w-3/4 sm:w-[300px] bg-white">
+                <!-- Navigation cancel button --> 
+                <button id="mobile-nav-close" class="mobile-nav-close absolute top-4 right-4"> <img src="assets/images/close.svg" alt="Close" /> </button> <!-- Navigation menu items -->
+                <ul class="navigation-menu absolute flex flex-col gap-4 divide-y justify-center h-full w-full">
+                    <li class="p-4"><a href="about.html">About</a></li>
+                    <li class="p-4"><a href="mission.html">Mission</a></li>
+                    <li class="p-4"><a href="faq.html">FAQ</a></li>
+                    <li class="p-4"><a href="reviews.html">User Reviews</a></li>
+                    <li class="p-4"><a href="feedback.html">Contact/Feedback</a></li>
+                    <li class="p-4"><a href="login.html">Login</a></li>
+                    <li class="p-4"><a href="get-started.html">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="divide-y">
+        <!-- Hero section -->
+        <div class="px-4 max-w-7xl mx-auto items-center py-10 md:h-screen pt-20">
+            <div class="w-full p-8 order-2 md:order-1 text-white">
+                <p class="text-left mb-4 lg:mb-8">                    
+                    Congratulations on completing all 12 assessments. Please download your eight page comprehensive report below . This report is designed to be shared with the student, parent and school so there is a clear, objective, individualized and
+                    cohesive roadmap to their academic success.
+                </p>
+                <div class="w-full md:flex md:flex gap-4 justify-center">
+                    <div class="md:w-1/2 md-flex-1 mb-4 md:mb-0 text-center">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                    <div class="md:w-1/2 md-flex-1 mb-4 md:mb-0 text-center">
+                        <table class="table-auto w-full border-collapse">
+                            <thead>
+                                <tr>
+                                    <th>Scaled Score</th>
+                                    <th>Descriptive Rating</th>
+                                    <th>Percent Category</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">16 or above</th>
+                                    <td>Very superior</td>
+                                    <td>Top 2%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">14-16</th>
+                                    <td>Superior</td>
+                                    <td>Top 9 to 2%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12-14</th>
+                                    <td>Above Average</td>
+                                    <td>Top 25 to 9%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8-12</th>
+                                    <td>Average</td>
+                                    <td>Middle 50%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6-8</th>
+                                    <td>Low Average</td>
+                                    <td>Lower 25 to 9%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4-6</th>
+                                    <td>Low</td>
+                                    <td>Lower 9 to 2%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4 or less</th>
+                                    <td>Very Low</td>
+                                    <td>Lower 2%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </main>
+    <footer>
+        <!-- Footer content (e.g., copyright, links) -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        var docWidth = document.documentElement.offsetWidth;
+
+        [].forEach.call(
+            document.querySelectorAll('*'),
+            function (el) {
+                if (el.offsetWidth > docWidth) {
+                    console.log(el);
+                }
+            }
+        );
+    </script>
+</body>
+
+</html>
