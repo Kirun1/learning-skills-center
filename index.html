@@ -18,7 +18,7 @@
     <header class="w-full fixed bg-[#999999] z-50">
         <div class="flex gap-4 max-w-7xl mx-auto h-20 items-center justify-between lg:justify-normal px-4">
             <!-- Header content (e.g., logo, navigation) --> 
-            <a href="index.html" class="logo-link rounded-lg flex-shrink-0"> <img src="assets/images/logo-white.png" class="w-[200px] sm:w-[300px]" alt="Logo"> </a>
+            <a href="index.html" class="logo-link rounded-lg flex-shrink-0 bg-white px-2"> <img src="assets/images/logo.png" class="w-[200px] sm:w-[300px]" alt="Logo"> </a>
             <ul class="navigation-menu hidden lg:flex flex-1 gap-4 justify-end text-white">
                 <!-- Navigation menu items -->
                 <li class="p-4 hover:border-b-2 border-transparent hover:border-white"><a href="about.html">About</a></li>
@@ -58,117 +58,34 @@
         <!-- Hero section -->
         <div class="flex flex-col md:flex-row px-4 max-w-7xl mx-auto items-center py-10">
             <div class="w-full p-8 order-2 md:order-1">
-                <div class="flex items-end gap-4 flex-wrap md:mb-4">
-                    <h1 class="text-2xl lg:text-4xl font-bold mb-4 md:mb-0 text-center">Learning Skills Center</h1>
-                    <p class="text-lg text-center mb-4 md:mb-0">What is your intelligence type?</p>
+                <div class="w-full">
+                    <h3 class="text-2xl font-bold">Take our 12 FREE game based intelligence assessments</h3>
+                    <p class="text-lg mb-4">(each assessment takes less than 5 minutes)</p>
                 </div>
-                <div class="w-full flex flex-col md:flex-row items-center">
-                    <div class="w-full md:w-3/4">
-                        <h3 class="text-2xl font-bold">Take our 12 FREE game based intelligence assessments</h3>
-                        <p class="text-lg mb-4">(each assessment takes less than 5 minutes)</p>
-                    </div>
-                    <div class="w-full md:w-1/4 text-center md:text-left mb-4 md:mb-0">
-                        <a href="#" class="text-white hover:text-black bg-[#E6913A] px-4 py-2 rounded-lg truncate">Get Started</a>
-                    </div>
-                </div>
-                <div class="w-full border border-black rounded-lg p-4 mb-4">
+                <div class="w-full p-4 mb-4">
                     <ul class="list-disc pl-4">
                         <li>Identify your intelligence strengths</li>
                         <li>Learn which academic subjects best align with your intelligence type</li>
                         <li>Understand which learning areas may need improvement in order to excel at school</li>
                     </ul>
                 </div>
-                <div class="w-full grid grid-cols-12 items-start mb-4 gap-2 bg-[#5893DE] border p-2 text-white break-words">
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Focus<br/><span class="text-transparent">transparent</span></h4>
-                        <div class="w-full">
-                            <img src="assets/images/10.png" alt="Focus" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Concentration</p>
+                <div class="w-full flex items-center">
+                    <div class="w-full md:w-1/2">
+                        <canvas id="myChart2"></canvas>
                     </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Reading<br/><span class="text-transparent">transparent</span></h4>
-                        <div class="w-full">
-                            <img src="assets/images/3.png" alt="Reading" class="w-12 mx-auto">
+                    <div class="w-full md:w-1/2">                        
+                        <div class="w-full mb-4 text-center">
+                            <a href="#" class="text-white hover:text-black bg-[#E6913A] px-4 py-2 rounded-lg truncate mx-auto">Get Started</a>
                         </div>
-                        <p class="text-center text-sm">Visual Memory</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Writing<br/><span class="text-transparent">transparent</span></h4>
-                        <div class="w-full">
-                            <img src="assets/images/4.png" alt="writing" class="w-12 mx-auto">
+                        <div class="w-full text-center flex flex-col gap-4">
+                            <p>You get an instant free one<br class=" hidden lg:block" />page report on your results</p>
+                            <p>You can purchase an optional,<br class=" hidden lg:block" />customized 8 page report for $10</p>
+                            <p>Your results are age-normed (ranked)<br class=" hidden lg:block" />from thousands of others your exact age</p>
                         </div>
-                        <p class="text-center text-sm">Visual Motor Learning</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Listening<br/><span class="text-transparent">transparent</span></h4>
-                        <div class="w-full">
-                            <img src="assets/images/2.png" alt="Listening" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Auditory Visual Memory</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Speaking<br/><span class="text-transparent">transparent</span></h4>
-                        <div class="w-full">
-                            <img src="assets/images/1i.png" alt="Speaking" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Verbal Production</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Logic<br/><span class="text-transparent">transparent</span></h4>
-                        <div class="w-full">
-                            <img src="assets/images/11.png" alt="Logic" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Concentration</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Spatial<br />Reasoning</h4>
-                        <div class="w-full">
-                            <img src="assets/images/5.png" alt="Spatial Reasoning" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Non Verbal Concepts</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">What is heard<br />in order</h4>
-                        <div class="w-full">
-                            <img src="assets/images/8.png" alt="What is heard in order" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Auditory Sequencing</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">What is seen<br />in order</h4>
-                        <div class="w-full">
-                            <img src="assets/images/7.png" alt="What is seen in order" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Visual Sequencing</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Understanding<br />What is seen</h4>
-                        <div class="w-full">
-                            <img src="assets/images/13.png" alt="Understanding What is seen" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Visual Abstraction</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Understanding<br />what is heard</h4>
-                        <div class="w-full">
-                            <img src="assets/images/10.png" alt="Understanding what is heard" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Auditory Abstraction</p>
-                    </div>
-                    <div class="flex-1 col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
-                        <h4 class="font-bold uppercase text-center text-[10px]">Writing<br />Memory</h4>
-                        <div class="w-full">
-                            <img src="assets/images/10.png" alt="Writing Memory" class="w-12 mx-auto">
-                        </div>
-                        <p class="text-center text-sm">Visual Motor Memory</p>
                     </div>
                 </div>
-                <div class="w-full text-center">
-                    <p>Our assessment program has been taken by over 20,000 and is age-normed from age 7 to adult.</p>
-                </div>
-                <div class="w-full my-4 gap-2 bg-[#5893DE] text-white text-center border p-2">
-                    <p>Our report is designed to be shared with the student, the parents and the school so there is a clear, objective, and cohesive roadmap for the students to achieve academic success</p>
+                <div class="w-full text-center font-bold">
+                    <p>Our assessment program has been taken by over 40,000 over the past 25 years.</p>
                 </div>
             </div>
         </div> 
@@ -288,6 +205,7 @@
     <script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/chart-annotation.js"></script>
     <script>
         var docWidth = document.documentElement.offsetWidth;
 

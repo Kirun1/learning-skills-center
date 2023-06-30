@@ -60,7 +60,20 @@ $(document).ready(function () {
   new Chart(ctx2, {
     type: "bar",
     data: {
-      labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      labels: [
+        "Focusing",
+        "Visual Memory",
+        "Visual Motor Learning",
+        "Auditory Memory",
+        "Verbal Production",
+        "Logical Reasoning",
+        "Spatial Reasoning",
+        "Visual Abstraction",
+        "Auditory Abstraction",
+        "Visual Order",
+        "Auditory Order",
+        "Writing Memory",
+      ],
       datasets: [
         {
           label: "Marks",
@@ -96,6 +109,46 @@ $(document).ready(function () {
           borderWidth: 1,
         },
       ],
+    },
+    options: {
+      legend: {
+        display: true,
+      },
+      tooltips: {
+        enabled: false,
+      },
+      scales: {
+        xAxes: [
+          {
+            display: true,
+            ticks: {
+              beginAtZero: true,
+            },
+          },
+        ],
+        yAxes: [
+          {
+            display: true,
+            ticks: {
+              beginAtZero: true,
+              max: 20,
+            },
+          },
+        ],
+      },
+      annotation: {
+        annotations: [
+          {
+            type: "line",
+            mode: "horizontal",
+            scaleID: "y-axis-0",
+            value: "10",
+            borderColor: "tomato",
+            borderWidth: 1,
+          },
+        ],
+        drawTime: "afterDraw", // (default)
+      },
     },
   });
 
