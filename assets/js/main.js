@@ -90,6 +90,7 @@ $(document).ready(function () {
     data: data,
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         annotation: {
           annotations: [
