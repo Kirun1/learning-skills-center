@@ -80,3 +80,8 @@
     border: 2px solid #E6913A;
     padding: 10px 15px;
 }
+
+.green-properties .owl-nav .owl-prev span,
+.green-properties .owl-nav .owl-next span {
+    color: #fff;
+}
