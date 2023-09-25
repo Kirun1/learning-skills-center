@@ -121,6 +121,12 @@ $(document).ready(function () {
    Tabs 
    ========================================================*/
    $(".button-tab").click(function () {
+     // Remove the "active" class from all buttons
+     $(".button-tab").removeClass("active");
+
+     // Add the "active" class to the clicked button
+     $(this).addClass("active");
+
      // Hide all tab panes
      $(".tab-pane").addClass("hidden");
 

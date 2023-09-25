@@ -64,3 +64,19 @@
 .owl-carousel .owl-nav button.owl-next {
     float: right;
 }
+
+.button-tab {
+    background-color: #999;
+    border-color: #999;
+    color: #fff;
+}
+
+.button-tab.active {
+    background-color: #E6913A;
+    border-color: #E6913A;
+}
+
+.tab-content {
+    border: 2px solid #E6913A;
+    padding: 10px 15px;
+}
