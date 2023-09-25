@@ -117,4 +117,16 @@ $(document).ready(function () {
   // Create the chart
   const myChart = new Chart(document.getElementById("myChart"), config);  
 
+  /* =======================================================
+   Tabs 
+   ========================================================*/
+   $(".button-tab").click(function () {
+     // Hide all tab panes
+     $(".tab-pane").addClass("hidden");
+
+     // Show the corresponding tab pane
+     const index = $(this).index();
+     $(".tab-pane:eq(" + index + ")").removeClass("hidden");
+   });
+
 });
