@@ -89,3 +89,10 @@
 .intelligence-types ul li {
     margin-bottom: 4px;
 }
+
+@media (max-width: 767px) {
+    .owl-carousel p,
+    .intelligence-types ul li {
+        font-size: 16px;
+    }
+}
