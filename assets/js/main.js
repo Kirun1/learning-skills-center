@@ -33,7 +33,7 @@ $(document).ready(function () {
     },
   });
 
-  // chartjs   
+  // chartjs
   const data = {
     labels: [
       "Focusing",
@@ -86,6 +86,12 @@ $(document).ready(function () {
     ],
   };
 
+  // Find the highest value in the data
+  const highestValue = Math.max(...data.datasets[0].data);
+
+  // Calculate the average value as half of the highest value
+  const averageValue = highestValue / 2;
+
   // Configuration for the chart
   const config = {
     type: "bar",
@@ -100,9 +106,7 @@ $(document).ready(function () {
               type: "line",
               mode: "horizontal",
               scaleID: "y",
-              value:
-                data.datasets[0].data.reduce((a, b) => a + b, 0) /
-                data.datasets[0].data.length,
+              value: averageValue,
               borderColor: "red",
               borderWidth: 2,
               label: {
@@ -117,24 +121,23 @@ $(document).ready(function () {
   };
 
   // Create the chart
-  const myChart = new Chart(document.getElementById("myChart"), config);  
+  const myChart = new Chart(document.getElementById("myChart"), config);
 
   /* =======================================================
    Tabs 
    ========================================================*/
-   $(".button-tab").click(function () {
-     // Remove the "active" class from all buttons
-     $(".button-tab").removeClass("active");
+  $(".button-tab").click(function () {
+    // Remove the "active" class from all buttons
+    $(".button-tab").removeClass("active");
 
-     // Add the "active" class to the clicked button
-     $(this).addClass("active");
+    // Add the "active" class to the clicked button
+    $(this).addClass("active");
 
-     // Hide all tab panes
-     $(".tab-pane").addClass("hidden");
+    // Hide all tab panes
+    $(".tab-pane").addClass("hidden");
 
-     // Show the corresponding tab pane
-     const index = $(this).index();
-     $(".tab-pane:eq(" + index + ")").removeClass("hidden");
-   });
-
+    // Show the corresponding tab pane
+    const index = $(this).index();
+    $(".tab-pane:eq(" + index + ")").removeClass("hidden");
+  });
 });
