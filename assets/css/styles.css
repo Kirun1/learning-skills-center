@@ -79,6 +79,7 @@
 .tab-content {
     border: 2px solid #E6913A;
     padding: 10px 30px;
+    background: #fefefe;
 }
 
 .green-properties .owl-nav .owl-prev span,
@@ -96,4 +97,8 @@
     .tab-content {
         font-size: 14px;
     }
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block !important;
 }
