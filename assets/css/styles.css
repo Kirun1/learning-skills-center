@@ -92,7 +92,8 @@
 
 @media (max-width: 767px) {
     .owl-carousel p,
-    .intelligence-types ul li {
-        font-size: 16px;
+    .intelligence-types ul li,
+    .tab-content {
+        font-size: 14px;
     }
 }
