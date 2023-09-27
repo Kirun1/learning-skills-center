@@ -33,7 +33,9 @@ $(document).ready(function () {
     },
   });
 
-  // chartjs
+  /*=====================================================
+   chartjs
+   =====================================================*/
   const data = {
     labels: [
       "Focusing",
@@ -140,4 +142,27 @@ $(document).ready(function () {
     const index = $(this).index();
     $(".tab-pane:eq(" + index + ")").removeClass("hidden");
   });
+
+  /*========================================================
+   Add a click event handler to the "About" nav item
+   ========================================================*/
+  $("#aboutNavItem, #missionNavItem, #faqNavItem").click(function (e) {
+    e.preventDefault(); // Prevent the default behavior of a link click
+
+    // Scroll to the 'ourInfo' section
+    $("html, body").animate(
+      {
+        scrollTop: $("#ourInfo").offset().top,
+      },
+      1000
+    ); // Adjust the animation duration as needed
+
+    // Programmatically click the corresponding button based on the clicked item's ID
+    var targetButtonID = "#" + $(this).attr("id").replace("NavItem", "");
+    $(targetButtonID).click();
+  });
+
+
 });
+
+
