@@ -14,6 +14,24 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <!-- Include jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <style>
+        .ellipsis {
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* You can change this number to control the number of lines shown */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .description {
+            width: auto;
+            padding: 3px;
+
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 
 <body class="">
@@ -103,9 +121,68 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>              
+        <!-- section 4: Famous people Testimonials -->
+        <div class="py-4 sm:py-10 bg-[#eeeeee]">
+            <div class="testimonials-section px-4 max-w-7xl mx-auto">
+                <h3 class="text-xl lg:text-4xl text-center font-bold mb-4">Famous People with Well Known  Learning Strengths & Differences</h3>
+                <div class="owl-carousel gap-4 pt-10">
+                    <div class="bg-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center text-white" style="min-height: 350px;">
+                        <div class="w-full -mt-16">
+                            <img src='assets/images/henry-ford.png' alt='Profile Image' class='testimononial-profile-img rounded-full mx-auto'>
+                            <div class="ml-4">
+                                <h2 class="text-lg font-bold text-white mt-2">Henry Ford</h2>
+                                <div class="flex gap-2 flex-col items-center justify-center">
+                                    <p>Dyslexia</p>
+                                    <p>(Industrialist), (Ford Motor Company)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 description ellipsis " style="text-align: justify">
+                            He spent his childhood struggling to read but excelled in engineering.  He never gave up and became the ‘father’ of the modern streamlined assembly line, producing the Ford Model T the first mass-produced, and affordable motorcar. Henry Ford was dy      
+                        </div>
+                        <a href="javascript:void(0);" class="read-more" style="color: #E69138;">Read More</a>
+                    </div>
+                    <div class="bg-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center text-white" style="min-height: 350px;">
+                        <div class="w-full -mt-16">
+                            <img src='assets/images/thomas-edson.png' alt='Profile Image' class='testimononial-profile-img rounded-full mx-auto'>
+                            <div class="ml-4">
+                                <h2 class="text-lg font-bold text-white mt-2">Thomas Edison</h2>
+                                <div class="flex gap-2 flex-col items-center justify-center">
+                                    <p>ADHD</p>
+                                    <p>(Inventor), (Edison Electric)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 description ellipsis " style="text-align: justify">
+                            The man who brought light to our lives, the award-winning American inventor Edison, is also believed to have had ADHD. His hyperactivity led him to the urge to always learn and discover something new.
+                        </div>
+                        <a href="javascript:void(0);" class="read-more" style="color: #E69138;">Read More</a>
+                    </div>
+                    <div class="bg-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center text-white" style="min-height: 350px;">
+                        <div class="w-full -mt-16">
+                            <img src='assets/images/emma-watson.png' alt='Profile Image' class='testimononial-profile-img rounded-full mx-auto'>
+                            <div class="ml-4">
+                                <h2 class="text-lg font-bold text-white mt-2">Emma Watson</h2>
+                                <div class="flex gap-2 flex-col items-center justify-center">
+                                    <p>ADHD</p>
+                                    <p>(Actress), (Harry Potter Movies)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 description ellipsis " style="text-align: justify">
+                            She is best known for her Hermione Granger role in “Harry Potter.” She was diagnosed with ADHD when she was a kid. Although she has never talked about her condition and that she has struggled with ADHD for a long time.
+                        </div>
+                        <a href="javascript:void(0);" class="read-more" style="color: #E69138;">Read More</a>          
+                    </div>
+                </div>
+                <div class="md:flex md:items-center md:gap-4 w-full text-center">
+                    <button onclick="window.location.href = 'assess.php';" class="lg:min-w-[400px] bg-yellow-500 hover:bg-yellow-700 text-white py-2 px-4 rounded hover:text-black transition duration-300 ease-in-out lg:text-2xl mt-2 mx-auto">Get Started</button>
+                </div>
+            </div>
+        </div>
         <!-- section 6: Optional Features -->
-        <div id="ourInfo" class="py-4 sm:py-10 bg-[#eeeeee]">
+        <div id="ourInfo" class="py-4 sm:py-10">
             <div class="max-w-7xl mx-auto lg:py-10 md:gap-10 lg:text-[20px]">
                 <!-- <h3 class="text-xl lg:text-4xl text-center font-bold mb-4">Get Started with Your Free Trial</h3> -->
                 <h3 class="text-xl md:text-2xl lg:text-4xl xl:text-[2.8rem] mb-4 flex-1 font-bold text-center mb-4 lg:mb-8">How Does it Work & Why is it Free?</h3>
@@ -152,54 +229,7 @@
                 </div>
                 <!-- <img src="assets/images/logo.png" alt="" class="w-full mx-auto mb-4 flex-1"> -->
             </div>
-        </div>   
-        <!-- section 5: Testimonials -->
-        <div class="py-4 sm:py-10">
-            <div class="testimonials-section px-4 max-w-7xl mx-auto">
-                <h3 class="text-xl lg:text-4xl text-center font-bold mb-4">Customer Feedback</h3>
-                <div class="owl-carousel gap-4 pt-10">
-                    <div class="bg-white text-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center">
-                        <div class="w-full -mt-16"> 
-                            <img src="assets/images/avatar-s-5.png" alt="Profile Image" class="testimononial-profile-img rounded-full mx-auto">
-                            <div class="ml-4">
-                                <h2 class="text-lg font-bold text-[#21496D]">John Doe</h2>
-                                <div class="flex gap-2 flex-col items-center justify-center">
-                                    <p>Title</p>
-                                    <p>(City), (State)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mt-4">Clubhouse Sports app has significantly increased our members squash court reservations. More Members are playing Squash with each other now than in the past 10 years, just amazing!!</p>
-                    </div>
-                    <div class="bg-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center text-white">
-                        <div class="w-full -mt-16"> 
-                            <img src="assets/images/avatar-s-5.png" alt="Profile Image" class="testimononial-profile-img rounded-full mx-auto">
-                            <div class="ml-4">
-                                <h2 class="text-lg font-bold text-white">John Doe</h2>
-                                <div class="flex gap-2 flex-col items-center justify-center">
-                                    <p>Title</p>
-                                    <p>(City), (State)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mt-4">Clubhouse Sports app has significantly increased our members squash court reservations. More Members are playing Squash with each other now than in the past 10 years, just amazing!!</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center">
-                        <div class="w-full -mt-16"> 
-                            <img src="assets/images/avatar-s-5.png" alt="Profile Image" class="testimononial-profile-img rounded-full mx-auto">
-                            <div class="ml-4">
-                                <h2 class="text-lg font-bold text-[#21496D]">John Doe</h2>
-                                <div class="flex gap-2 flex-col items-center justify-center">
-                                    <p>Title</p>
-                                    <p>(City), (State)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mt-4">Clubhouse Sports app has significantly increased our members squash court reservations. More Members are playing Squash with each other now than in the past 10 years, just amazing!!</p>
-                    </div>
-                </div>
-            </div>
-        </div>     
+        </div>    
         <!-- section 2: Types of intelligences -->
         <div class="bg-[#eeeeee]">
             <div class="px-4 max-w-7xl mx-auto py-10">
@@ -447,57 +477,63 @@
                     </div>
                 </div>
             </div>
-        </div>            
-        <!-- section 4: Famous people Testimonials -->
+        </div>      
+        <!-- section 5: Testimonials -->
         <div class="py-4 sm:py-10 bg-[#eeeeee]">
             <div class="testimonials-section px-4 max-w-7xl mx-auto">
-                <h3 class="text-xl lg:text-4xl text-center font-bold mb-4">Famous People with Well Known Learning Strengths &amp; Differences</h3>
+                <h3 class="text-xl lg:text-4xl text-center font-bold mb-4">Customer Feedback</h3>
                 <div class="owl-carousel gap-4 pt-10">
-                    <div class="bg-white text-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center">
-                        <div class="w-full -mt-16"> 
-                            <img src="assets/images/avatar-s-5.png" alt="Profile Image" class="testimononial-profile-img rounded-full mx-auto">
+                    <div class="bg-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center text-white" style="min-height: 350px;">
+                        <div class="w-full -mt-16">
+                            <img src='assets/images/amy.png' alt='Profile Image' class='testimononial-profile-img rounded-full mx-auto'>                        
                             <div class="ml-4">
-                                <h2 class="text-lg font-bold text-[#21496D]">John Doe</h2>
+                                <h2 class="text-lg font-bold text-white">Amy Phillip</h2>
                                 <div class="flex gap-2 flex-col items-center justify-center">
-                                    <p>(Learning Issue)</p>
-                                    <p>(Title), (Company)</p>
+                                    <p>Mom</p>                                
+                                    <p>Grosse Pointe Farms, Michigan</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="mt-4">(Well known for)<br />Clubhouse Sports app has significantly increased our members squash court reservations. More Members are playing Squash with each other now than in the past 10 years, just amazing!!</p>
+                        <div class="mt-4 description ellipsis " style="text-align: justify">
+                            My son is 12 years old and does very well in school with some subjects but struggles in others. The IQ Skills Assessment report clearly identified his learning strengths and the specific are he was having problems in these areas and why. Thank you!!                     
+                        </div>
+                        <a href="javascript:void(0);" class="read-more" style="color: #E69138;">Read More</a>                
                     </div>
-                    <div class="bg-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center text-white">
-                        <div class="w-full -mt-16"> 
-                            <img src="assets/images/avatar-s-5.png" alt="Profile Image" class="testimononial-profile-img rounded-full mx-auto">
+                    <div class="bg-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center text-white" style="min-height: 350px;">
+                        <div class="w-full -mt-16">
+                            <img src='assets/images/jeana.png' alt='Profile Image' class='testimononial-profile-img rounded-full mx-auto'>                        
                             <div class="ml-4">
-                                <h2 class="text-lg font-bold text-white">John Doe</h2>
+                                <h2 class="text-lg font-bold text-white">Jeanna Thom</h2>
                                 <div class="flex gap-2 flex-col items-center justify-center">
-                                    <p>(Learning Issue)</p>
-                                    <p>(Title), (Company)</p>
+                                    <p>Mom </p>                                
+                                    <p>Manhattan Beach, California</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="mt-4">(Well known for)<br />Clubhouse Sports app has significantly increased our members squash court reservations. More Members are playing Squash with each other now than in the past 10 years, just amazing!!</p>
+                        <div class="mt-4 description ellipsis " style="text-align: justify">
+                            all brains are different and your assessment program did successfully identify our daughter's unique strengths and your report offered actionable feedback and insights into her cognition. Amazing.                    
+                        </div>
+                        <a href="javascript:void(0);" class="read-more" style="color: #E69138;">Read More</a>                
                     </div>
-                    <div class="bg-white rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center">
-                        <div class="w-full -mt-16"> 
-                            <img src="assets/images/avatar-s-5.png" alt="Profile Image" class="testimononial-profile-img rounded-full mx-auto">
+                    <div class="bg-[#21496D] rounded-lg shadow-lg p-4 mx-4 max-w-md mx-auto text-center text-white" style="min-height: 350px;">
+                        <div class="w-full -mt-16">
+                            <img src='assets/images/missy.png' alt='Profile Image' class='testimononial-profile-img rounded-full mx-auto'>                        
                             <div class="ml-4">
-                                <h2 class="text-lg font-bold text-[#21496D]">John Doe</h2>
+                                <h2 class="text-lg font-bold text-white">Missy Cambe</h2>
                                 <div class="flex gap-2 flex-col items-center justify-center">
-                                    <p>(Learning Issue)</p>
-                                    <p>(Title), (Company)</p>
+                                    <p style="height: 28px;"></p>                                
+                                    <p>Nantucket, Massachusetts</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="mt-4">(Well known for)<br />Clubhouse Sports app has significantly increased our members squash court reservations. More Members are playing Squash with each other now than in the past 10 years, just amazing!!</p>
+                        <div class="mt-4 description ellipsis " style="text-align: justify">
+                            "Thank you so much!  My 15-year-old daughter's self-esteem and self-confidence and her belief in her intelligence were taking such a dive as she entered middle school. I was deeply concerned about her overall belief in herself and her well-being. She neve                    
+                        </div>
+                        <a href="javascript:void(0);" class="read-more" style="color: #E69138;">Read More</a>                
                     </div>
-                </div>
-                <div class="md:flex md:items-center md:gap-4 w-full text-center">
-                    <button class="lg:min-w-[400px] bg-yellow-500 hover:bg-yellow-700 text-white py-2 px-4 rounded hover:text-black transition duration-300 ease-in-out lg:text-2xl mt-2 mx-auto">Get Started</button>
                 </div>
             </div>
-        </div>                   
+        </div>              
         <!-- share link -->
         <div class="py-4 sm:py-10">
             <div class="testimonials-section px-4 max-w-7xl mx-auto">
@@ -552,6 +588,18 @@
                 }
             }
         );
+    </script>
+    
+    <script>
+        $(document)
+            .on('click','.read-more',function() {
+                $(this).removeClass('read-more').addClass('show-less').html('Show Less').prev('.description').removeClass('ellipsis');
+            })
+
+            .on('click','.show-less',function() {
+                $(this).removeClass('show-less').addClass('read-more').html('Read More').prev('.description').addClass('ellipsis');
+            })
+        ;
     </script>
 </body>
 
