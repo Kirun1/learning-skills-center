@@ -30,6 +30,7 @@
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
+    font-size: 20px;
 }
 
 .testimononial-profile-img {
@@ -48,4 +49,56 @@
 .second-tr th {
     border-left: 0;
     border-right: 0;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 10px;
+    font-size: 50px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    float: right;
+}
+
+.button-tab {
+    background-color: #999;
+    border-color: #999;
+    color: #fff;
+}
+
+.button-tab.active {
+    background-color: #E6913A;
+    border-color: #E6913A;
+}
+
+.tab-content {
+    border: 2px solid #E6913A;
+    padding: 10px 30px;
+    background: #fefefe;
+}
+
+.green-properties .owl-nav .owl-prev span,
+.green-properties .owl-nav .owl-next span {
+    color: #fff;
+}
+
+.intelligence-types ul li {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    .owl-carousel p,
+    .intelligence-types ul li,
+    .tab-content {
+        font-size: 14px;
+    }
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block !important;
 }
